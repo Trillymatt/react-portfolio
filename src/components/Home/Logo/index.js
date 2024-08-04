@@ -1,7 +1,7 @@
 import { useEffect, useRef } from 'react'
 import gsap from 'gsap-trial'
 import DrawSVGPlugin from 'gsap-trial/DrawSVGPlugin'
-import LogoS from '../../../assets/images/logo-s.png'
+import LogoM from '../../../assets/images/logo-m.png'
 import './index.scss'
 
 const Logo = () => {
@@ -18,7 +18,7 @@ const Logo = () => {
         duration: 1,
         opacity: 1,
       })
-      .from(outlineLogoRef.current, {
+      .from(outlineLogoRef.csurrent, {
         drawSVG: 0,
         duration: 20,
       })
@@ -41,7 +41,7 @@ const Logo = () => {
       <img
         className="solid-logo"
         ref={solidLogoRef}
-        src={LogoS}
+        src={LogoM}
         alt="JavaScript,  Developer"
       />
 
